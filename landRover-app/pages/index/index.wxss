@@ -1,0 +1,10 @@
+swiper  {
+  /* vh 相对单位 100vh 当前设备可视区域总高度 */
+  height: 100vh;
+}  
+image{
+  width: 100%;
+}
+.content view{
+  text-align: center;
+}

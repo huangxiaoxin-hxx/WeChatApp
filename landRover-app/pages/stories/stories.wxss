@@ -1,1 +1,17 @@
 /* pages/stories/stories.wxss */
+.card image{
+  width: 100%;
+  position: relative;
+}
+.card video{
+  width: 100%;
+  position: relative;
+}
+
+.card .label {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  color: #fff;
+  background-color: black;
+}

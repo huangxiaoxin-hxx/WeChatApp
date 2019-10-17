@@ -1,2 +1,15 @@
 <!--pages/stories/stories.wxml-->
-<text>pages/stories/stories.wxml</text>
+<view class="cards">
+  <view class="card" wx:for="{{entities}}" >
+  <video class="" src="{{item.video}}" hidden="{{currentVid != item.id}}"
+  id="{{item.id}}"></video>  
+  <image src="{{item.image}}" 
+  bind:tap="play"
+  data-vid="{{item.id}}"
+  hidden="{{currentVid == item.id}}" >
+    <view class="label">{{item.duration}}</view>  
+  </image>
+    
+  </view>
+</view>
+  

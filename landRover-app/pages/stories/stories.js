@@ -1,13 +1,26 @@
-// pages/stories/stories.js
+// pages/stories/index.js
+const entities = require('../../assets/entities.js');
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    entities,
+    currentVid: null
   },
-
+  play(event) {
+    const target = event.target;
+    const currentVid = target.dataset.vid;
+    if (currentVid) {
+      let currentVideo = wx
+      .createVideoContext(`${currentVid}`);
+      currentVideo.play();
+    }
+    this.setData({
+      currentVid
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

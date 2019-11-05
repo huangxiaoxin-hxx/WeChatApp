@@ -1,0 +1,20 @@
+<!--miniprogram/pages/search/search.wxml-->
+<view class="content">
+  <view class="header">
+    <view class="header-left">
+      <view class="header-left-icon"><image src="../../images/sousuoblack.png" /></view>
+      <input class="{{fontBlack ? 'on' : ''}}" type="text" value="{{serachValue}}" bindtap="getFocus"/>
+    </view>
+    <view class="header-right" bindtap="backHome">取消</view>
+  </view>
+  <!-- 头部结束 -->
+  <view class="hot">
+    <view class="hot-title">
+      <view class="hot-title-left">大家都在搜</view>
+      <view class="hot-title-right">展开</view>
+    </view>
+    <view class="hot-content">
+      <view class="content-block"></view>
+    </view>
+  </view>
+</view>

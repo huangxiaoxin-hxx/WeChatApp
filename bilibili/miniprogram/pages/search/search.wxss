@@ -41,28 +41,85 @@
   font-size: 16px;
   font-weight: bold;
 }
-.hot-title{
+.list{
+  margin: 20rpx 0;
+}
+.list-title{
   font-size: 12px;
   margin-top: 10rpx;
   display: flex;
 }
-.hot-title-left{
+.list-title-left{
   flex:1;
   text-align: left;
   margin-left: 20rpx;
   font-weight: lighter;
   clear: both;
 }
-.hot-title-right {
+.list-title-right {
   flex:1;
   text-align: right;
   margin-right: 20rpx;
   color: #aaa;
   font-weight: lighter;
 }
-.hot-content {
+.list-content.unfold {
   width: 100%;
-  height: 120rpx;
-  background-color: #ccc;
+  height: 160rpx;
   overflow: hidden;
+}
+.list-content {
+  width: 100%;
+  overflow: hidden;
+}
+.list-content-block {
+  height: 60rpx;
+  margin: 10rpx;
+  padding: 10rpx;
+  float: left;
+  text-align: center;
+  line-height: 40rpx;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, .05);
+  font-size: 14px;
+  border-radius: 5px;
+}
+.top-image {
+  width: 96%;
+  height: 250rpx;
+  border-radius: 5px;
+  clear: both;
+  text-align: center;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.top-image image{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.list-scroll {
+  height: 320rpx;
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.clear {
+  width: 100%;
+  height: 20rpx;
+  margin-top: 20rpx;
+  text-align: center;
+  line-height: 20rpx;
+}
+.clear image {
+  width: 40rpx;
+  height: 40rpx;
+  position: relative;
+  top: 8rpx;
+  left: -10rpx;
+}
+.clear span {
+  color: #dbdbdb
 }

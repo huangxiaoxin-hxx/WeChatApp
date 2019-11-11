@@ -72,3 +72,186 @@
   font-size: 32rpx;
   font-weight: bold;
 }
+.recommend-scroll {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.recommend-scroll-content{
+  width: 45%;
+  height: 300rpx;
+  float: left;
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px #dbdbdb;
+}
+.recommend-scroll-content-top{
+  width: 100%;
+  height: 200rpx;
+}
+.recommend-scroll-content-top image{
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.view-counts {
+  position: relative;
+  top: -50rpx;
+  float: left;
+  margin-left: 10rpx;
+}
+.view-counts image {
+  width: 30rpx;
+  height: 30rpx;
+}
+.view-counts span{
+  display: inline-block;
+  height: 30rpx;
+  line-height: 30rpx;
+  font-size: 12px;
+  color: #fff;
+  position: relative;
+  top: -5rpx;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+}
+.recommend-scroll-content-top .right {
+  float: right;
+  line-height: 30rpx;
+  font-size: 12px;
+  color: #fff;
+  position: relative;
+  top: -45rpx;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+}
+.recommend-scroll-content-bottom {
+  height: 100rpx;
+  width: 100%;
+}
+.recommend-scroll-content-bottom .title{
+  height: 40rpx;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  top: -45rpx;
+  font-size: 14px;
+  padding: 5rpx;
+  box-sizing: border-box;
+}
+.title-bottom {
+  height: 40rpx;
+  width: 100%;
+  font-size: 12px;
+  color: #aaaaaa;
+  position: relative;
+  top: -40rpx;
+  left: 20rpx;
+}
+.title-bottom-right image {
+  width: 30rpx;
+  height: 30rpx;
+  float: right;
+  position: relative;
+  right: 30rpx;
+  top: -30rpx;
+}
+.animation-scroll{
+  width: 94%;
+  margin: 20rpx auto;
+  height: 47%;
+  border-radius: 5px;
+}
+.animation-swiper-item image{
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.animation-bar {
+  width: 100%;
+  height: 150rpx;
+  display: flex;
+  border-bottom: 1px solid rgb(196, 188, 188);
+}
+.animation-bar-item {
+  width: 18%;
+  height: 120rpx;
+  flex: 1;
+  position: relative;
+  top: 20rpx;
+  left: 20rpx;
+}
+.animation-bar-item-bar {
+  width: 50rpx;
+  height: 50rpx;
+  text-align: center;
+  border-radius: 50%;
+}
+.animation-bar-item-bar image {
+  width: 30rpx;
+  height: 30rpx;
+  position: relative;
+  top: 8rpx;
+}
+.animation-bar-item span {
+  font-size: 12px;
+  color: rgb(94, 92, 92);
+  font-weight: lighter;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  width: 50rpx;
+}
+.my-animation {
+  margin: 0 auto;
+  padding: 20rpx;
+}
+.my-animation-top {
+  margin-bottom: 10rpx;
+}
+.my-animation-top-left {
+  float: left;
+}
+.my-animation-top-left span {
+  font-size: 14px;
+  font-weight: bold;
+}
+.my-animation-top-right {
+  float: right;
+}
+.my-animation-top-right span {
+  font-size: 12px;
+  font-weight: lighter;
+  color: #dbdbdb;
+}
+.my-animation-top-right image {
+  width: 30rpx;
+  height: 30rpx;
+  position: relative;
+  top: 6rpx;
+}
+.my-animation-bottom {
+  width: 100%;
+  height: 200rpx;
+  clear: both;
+  position: relative;
+  top: 20rpx;
+  background-color: #aaa;
+}
+.my-animation-bottom-scroll {
+  width: 100%;
+  height: 100%;
+}
+.my-animation-bottom-view {
+  width: 33%;
+  height: 100%;
+  background-color: #fff;
+}
+.my-animation-bottom-view image {
+  width: 100%;
+  height: 70%;
+}

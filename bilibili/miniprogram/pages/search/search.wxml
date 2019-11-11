@@ -5,7 +5,8 @@
       <view class="header-left-icon">
         <image src="../../images/sousuoblack.png" />
       </view>
-      <input class="{{fontBlack ? 'on' : ''}}" type="text" value="{{serachValue}}" bindtap="getFocus" bindconfirm="inputConfirm"/>
+      <input class="{{fontBlack ? 'on' : ''}}" type="text" placeholder="{{serachValue}}" 
+      value="{{inputValue}}" bindinput="getFocus" bindconfirm="inputConfirm"/>
     </view>
     <view class="header-right" bindtap="backHome">取消</view>
   </view>
@@ -18,7 +19,7 @@
       </view>
     </view>
     <view class="list-content hot-content {{hotSwitch? 'unfold' : ''}}">
-      <view class="list-content-block content-block" wx:for="{{topSearch}}">{{item}}</view>
+      <view class="list-content-block content-block" wx:for="{{topSearch}}" data-value="{{item}}" bindtap="getValue">{{item}}</view>
     </view>
   </view>
   <!-- 热搜结束 -->
@@ -34,10 +35,10 @@
       </view>
     </view>
     <scroll-view class="list-scroll" scroll-y="true" wx:if="{{pastSwitch}}">
-      <view class="list-content-block content-block" wx:for="{{pastSearch}}">{{item}}</view>
+      <view class="list-content-block content-block" wx:for="{{pastSearch}}" data-value="{{item}}" bindtap="getValue">{{item}}</view>
     </scroll-view>
     <view class="list-content unfold" wx:else>
-      <view class="list-content-block content-block" wx:for="{{pastSearch}}">{{item}}</view>
+      <view class="list-content-block content-block" wx:for="{{pastSearch}}" data-value="{{item}}" bindtap="getValue">{{item}}</view>
     </view>
     <view class="clear" bindtap="clearPast">
       <image src="../../images/lajitong.png" />

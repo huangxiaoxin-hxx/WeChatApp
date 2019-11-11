@@ -7,6 +7,7 @@ Page({
   data: {
     serachValue: '新海诚这次拆散恋人了吗',
     fontBlack: false,//搜索框颜色字体是否为黑
+    inputValue: '',
 
     topSearch: ['RUNNINGMAN', '豫章书院', '明日方舟', '小米手表', '徐大SAO', '炫雅flower shower', '鬼灭之刃', '初恋那件小事', 'mamamoo', '撒贝宁', 'fpx', '偶然发现的一天', '搞笑', '蜡笔小新', '主持人大赛', '朱一龙', '家有儿女'],
 
@@ -82,7 +83,6 @@ Page({
   //获取到光标，删除默认内容 且输入字体为黑色
   getFocus: function () {
     this.setData({
-      serachValue: '',
       fontBlack: true
     })
   },
@@ -132,14 +132,36 @@ Page({
   },
   // 当搜索框输入值确认时，把value加入到历史记录 pastSearch 中
   inputConfirm: function (e) {
-    console.log(e.detail.value)
-    console.log(this.data.pastSearch)
+    // console.log(e.detail.value)
+    // console.log(this.data.pastSearch)
     this.setData({
       // 问题1 如何实现向数组中加入值
       // 问题2 为什么值会拆开
       //已解决，解决办法如下代码
-      pastSearch: [e.detail.value,...this.data.pastSearch]
+      pastSearch: [e.detail.value, ...this.data.pastSearch]
     })
     this.isDeletePast()
+  },
+  //点击热搜或者历史记录的小块，将值给到input搜索框
+  getValue: function (e) {
+    this.deleteEqualPast(e.currentTarget.dataset.value)
+    this.setData({
+      fontBlack: true,
+      inputValue: e.currentTarget.dataset.value,
+      pastSearch: [e.currentTarget.dataset.value, ...this.data.pastSearch]
+    })
+  },
+  //删除有着相同名字的历史记录
+  deleteEqualPast: function (inputValue) {
+    const pastRecord = this.data.pastSearch
+    for(let i = 0; i < pastRecord.length; i++){
+      if(inputValue === pastRecord[i]){
+        pastRecord.splice(i,1)
+      }
+    }
+    this.setData({
+      pastSearch: pastRecord
+    })
+    // console.log(pastRecord)
   }
 })

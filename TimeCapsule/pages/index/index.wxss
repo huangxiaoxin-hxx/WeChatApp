@@ -1,0 +1,97 @@
+/**index.wxss**/
+page{
+  display: flex;
+  flex-direction: column;
+}
+.map-box{
+  width: 100%;
+  height: 1200rpx;
+  /* overflow: hidden; */
+}
+#myMap{
+  width: 100%;
+  height: 1000rpx;
+}
+/* 地图控件 */
+.top-tips{
+  position: absolute; 
+  width: 710rpx;
+  height: 90rpx;
+  left: 50%;
+  z-index: 99;
+  transform: translateX(-50%);
+  top: 0rpx;
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  align-items: center;
+  padding-left: 20rpx;
+  font-size: 28rpx;
+  color: #666;
+}
+.top-text{
+  position:static;
+  flex: 1;
+  text-align: center;
+}
+.mask {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(128,128,128,.3);
+}
+.mask.close {
+  display: none;
+}
+.Mask_btn {
+  position: absolute;
+  top: 210rpx;
+  width: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.toast {
+  position: absolute;
+  width: 400rpx;
+  height: 300rpx;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+.toast-text {
+  padding: 20rpx;
+  text-align: center;
+  font-size: 30rpx;
+  line-height: 80rpx;
+  font-weight: bold;
+}
+.map-icon{
+  right:20rpx;
+  width:76rpx;
+  height:76rpx;
+}
+.map-icon_user{
+  position: absolute;
+  bottom: 142rpx;
+}
+.map-icon_reset{
+  position: absolute;
+  bottom: 42rpx;
+}
+.Mask_Button {
+  display: flex;
+  position: absolute;
+  top: 210rpx;
+  width: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.Mask_btn1,.Mask_btn2 {
+  flex: 1;
+}
+.put_btn {
+  width: 100%;
+  height: 100rpx;
+  font-size: 16px;
+}

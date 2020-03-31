@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    currentTab: 3,
+    currentTab: 2,
     scrollHeight: '',
     scrollWidth: '',
     recommend: [
@@ -127,29 +127,51 @@ Page({
     my_animation: [
       {
         imgURL: 'http://i0.hdslb.com/bfs/archive/855a87786ff59b9f45c293fa2b97bef06b46fd8b.jpg@160w_100h.webp',
-        name: '【10月】喜欢本大爷的竟然就你一个？06 【独家正版】',
+        name: '喜欢本大爷的竟然就你一个？',
         number: '1'
       },
       {
         imgURL: 'http://i1.hdslb.com/bfs/archive/6a6e77fcf05c92fd2e87a64e560cca9123145216.jpg@320w_200h.webp',
-        name: '【10月】喜欢本大爷的竟然就你一个？06 【独家正版】',
-        number: '1'
+        name: '这个勇者明明超强却过分慎重',
+        number: '6'
       },
       {
-        imgURL: 'http://i0.hdslb.com/bfs/archive/855a87786ff59b9f45c293fa2b97bef06b46fd8b.jpg@160w_100h.webp',
-        name: '【10月】喜欢本大爷的竟然就你一个？06 【独家正版】',
-        number: '1'
+        imgURL: 'http://i0.hdslb.com/bfs/archive/2536c0e2bcdceafff0e7e471d7962bf3da3e349b.jpg@192w_120h.webp',
+        name: '刀剑神域 爱丽丝篇 异界战争',
+        number: '5'
       },
       {
-        imgURL: 'http://i0.hdslb.com/bfs/archive/855a87786ff59b9f45c293fa2b97bef06b46fd8b.jpg@160w_100h.webp',
-        name: '【10月】喜欢本大爷的竟然就你一个？06 【独家正版】',
-        number: '1'
+        imgURL: 'http://i0.hdslb.com/bfs/archive/00a15efeb7b971bcdf37305199ed43f968922fbd.jpg@192w_120h.webp',
+        name: '青春猪头少年不会梦到兔女郎学姐',
+        number: '3'
       },
       {
-        imgURL: 'http://i0.hdslb.com/bfs/archive/855a87786ff59b9f45c293fa2b97bef06b46fd8b.jpg@160w_100h.webp',
-        name: '【10月】喜欢本大爷的竟然就你一个？06 【独家正版】',
+        imgURL: 'http://i0.hdslb.com/bfs/bangumi/e1745c595cd3c02479818f9e1456be2eed56ec57.jpg@192w_120h.webp',
+        name: '罗小黑战记',
         number: '1'
       }
+    ],
+    animation_recommend: [
+      {
+        imgURL: 'http://i0.hdslb.com/bfs/archive/d84fb0c9b4e5fa163f10ce6819becfaefa4f02c9.jpg@192w_120h.webp',
+        name: '鬼灭之刃',
+        number: '26'
+      },
+      {
+        imgURL: 'http://i1.hdslb.com/bfs/archive/9a30778a6a50f9c301efaaa91b334cc4160dcc55.jpg@192w_120h.webp',
+        name: 'JUST BECAUSE',
+        number: '13'
+      },
+      {
+        imgURL: 'http://i0.hdslb.com/bfs/bangumi/c54de0b3e2084dd809a54630e639e2c0d4023a33.jpg@192w_120h.webp',
+        name: '路人女主的养成方法',
+        number: '13'
+      },
+      {
+        imgURL: 'http://i0.hdslb.com/bfs/bangumi/0de73871c3021d45812ecdaf6600db441eef51cd.jpg@192w_120h.webp',
+        name: '冰菓',
+        number: '22'
+      },
     ]
   },
 

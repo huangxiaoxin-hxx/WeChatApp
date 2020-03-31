@@ -1,0 +1,5 @@
+<!-- pages/user/user.wxml -->
+<view class="user-box">
+  <span>您好，{{username}}</span>
+  <button class="btn" type="primary" bindtap="delUser">退出登录</button>
+</view>

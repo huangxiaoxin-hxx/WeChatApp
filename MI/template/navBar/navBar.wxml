@@ -1,0 +1,28 @@
+<template name="navBar1">
+  <view class="navBar">
+    <view class="nav-list" wx:for="{{nav_data1}}" wx:key="index">
+      <navigator url="{{item.nav_urls}}" hover-class="none">
+        <view class="nav-item">
+          <image class="item-img" src="{{item.nav_img}}"/>
+          <text class="item-text">
+            {{item.nav_title}}
+          </text>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</template>
+<template name="navBar2">
+  <view class="navBar">
+    <view class="nav-list" wx:for="{{nav_data2}}" wx:key="index">
+      <navigator url="{{item.nav_urls}}" hover-class="none">
+        <view class="nav-item">
+          <image class="item-img" src="{{item.nav_img}}"/>
+          <text class="item-text">
+            {{item.nav_title}}
+          </text>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</template>

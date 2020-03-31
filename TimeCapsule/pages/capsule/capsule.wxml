@@ -1,0 +1,12 @@
+<!--pages/capsule/capsule.wxml-->
+<view class="capsule-box">
+  <view class="capsuleWrapper">
+    <span>来自{{capsule.fromUsername}}的时间胶囊:</span>
+    <view class="capsuleText">
+      {{capsule.text}}
+    </view>
+    <button class="btn" type="primary" bindtap="toIndex">
+      返回主页
+    </button>
+  </view>
+</view>

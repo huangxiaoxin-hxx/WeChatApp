@@ -175,7 +175,7 @@
   width: 100%;
   height: 150rpx;
   display: flex;
-  border-bottom: 1px solid rgb(196, 188, 188);
+  border-bottom: 1px solid rgba(196, 188, 188, 0.1);
 }
 .animation-bar-item {
   width: 18%;
@@ -205,8 +205,9 @@
   display: inline-block;
   text-align: center;
   width: 50rpx;
+  white-space: nowrap;
 }
-.my-animation {
+.my-animation,.animation-recommend {
   margin: 0 auto;
   padding: 20rpx;
 }
@@ -226,7 +227,7 @@
 .my-animation-top-right span {
   font-size: 12px;
   font-weight: lighter;
-  color: #dbdbdb;
+  color: #aaa;
 }
 .my-animation-top-right image {
   width: 30rpx;
@@ -235,23 +236,103 @@
   top: 6rpx;
 }
 .my-animation-bottom {
+  height: 240rpx;
   width: 100%;
-  height: 200rpx;
   clear: both;
-  position: relative;
-  top: 20rpx;
-  background-color: #aaa;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  border-bottom: 1px solid rgba(196, 188, 188, 0.1);
 }
-.my-animation-bottom-scroll {
+.my-animation-bottom-block {
+  height: 100%;
+  width: 30%;
+  display: inline-block;
+  margin: 10rpx;
+}
+.my-animation-bottom-block .top-image {
+  width: 100%;
+  height: 60%;
+}
+.my-animation-bottom-block .top-image .image {
   width: 100%;
   height: 100%;
+  border-radius: 5px;
 }
-.my-animation-bottom-view {
-  width: 33%;
-  height: 100%;
-  background-color: #fff;
+.my-animation-bottom-block .bottom-title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
-.my-animation-bottom-view image {
+.my-animation-bottom-block .bottom-title .name {
+  font-size: 13px;
+  font-weight: lighter;
+}
+.my-animation-bottom-block .bottom-number {
+  position: relative;
+  top: -10rpx;
+}
+.my-animation-bottom-block .bottom-number .number {
+  font-size: 10px;
+  font-weight: lighter;
+  color: #f25c81;
+}
+.animation-recommend-content {
+  width: 100%;
+  height: 500rpx;
+  clear: both;
+}
+.animation-recommend-content-item {
+  height: 45%;
+  width: 45%;
+  float: left;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+}
+.animation-recommend-content-item .top-image {
   width: 100%;
   height: 70%;
+}
+.animation-recommend-content-item .top-image image {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.animation-recommend-content-item .bottom-title{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.animation-recommend-content-item .bottom-title .name{ 
+  font-size: 14px;
+  font-weight: bold;
+}
+.animation-recommend-content-item {
+  font-size: 10px;
+  font-weight: lighter;
+}
+.transfer {
+  width: 120rpx;
+  height: 40rpx;
+  margin: 20rpx auto;
+  position: relative;
+  top: 20rpx;
+}
+.transfer-image {
+  width: 30rpx;
+  height: 30rpx;
+  float: left;
+  margin-right: 10rpx;
+}
+.transfer-image image {
+  width: 100%;
+  height: 100%;
+}
+.transfer-text {
+  position: relative;
+  top: -10rpx;
+}
+.transfer-text span{
+  font-size: 12px;
+  color: #f25c81;
 }

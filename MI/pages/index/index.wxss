@@ -1,0 +1,108 @@
+/**index.wxss**/
+@import '../../template/navBar/navBar';
+page{
+  width: 100%;
+  height: 100vh;
+  background-color: #f4f6f8;
+}
+.section {
+  width: 100%;
+}
+/* 顶部搜索栏样式 */
+.searchBar{
+  display: flex;
+  height: 100rpx;
+  background: #ff6700;
+}
+.searchBar-logo{
+  width: 180rpx;
+}
+.miLogo{
+  display: inline-block;
+  background-color: #fff;
+  width: 60rpx;
+  height: 60rpx;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  text-align: center;
+}
+.miLogo .miLogoImg {
+  margin-top: 20%;
+  width: 60%;
+  height: 60%;
+}
+.miSpan {
+  display: relative;
+  background-color: #ff6700;
+  height: 60rpx;
+  margin-top: -56rpx;
+  margin-left: 70rpx;
+  text-align: center;
+}
+.miSpan span{
+  font-size: 20px;
+  font-weight:bold;
+  color: #fff;
+}
+.searchBar .searchBar-box{
+  display: inline-block;
+  width: 50%;
+  height: 60rpx;
+  margin-top: 20rpx;
+  border-radius: 40rpx;
+  background: #fff;
+}
+.searchBar-box.tap{
+  background: rgba(255,247,231,.9);
+}
+.search-plac{
+  margin-left: 16%;
+  font-size: .9rem;
+  margin-top: 10rpx;
+}
+.searchBar-box .search-icon{
+  position: absolute;
+  left: 25%;
+  top: 30rpx;
+  width: 44rpx;
+  height: 44rpx;
+}
+
+
+.swiper-slide {
+  width: 100%;
+  height: 380rpx;
+}
+.swiper-img {
+  width: 100%;
+  display: block;
+}
+
+.bottom-shadow {
+  box-shadow: .5px .1px 3px #aaa;
+}
+
+.recommend{
+  width: 700rpx;
+  background-color: #fff;
+  margin-top: 25rpx;
+  margin-left: 25rpx;
+}
+.recommend-top{
+  padding: 25rpx;
+  box-shadow: .1px .1px 1px #aaa;
+}
+.recommend-top-title {
+  font-weight: bold;
+}
+
+/* 改变swiper小圆点的位置 */
+.wx-swiper-dots{
+  position:relative;
+  left: unset!important;
+  right: -30rpx;
+}
+.wx-swiper-dots.wx-swiper-dots-horizontal{
+margin-bottom: -5rpx;
+}
+

@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#fc6720",
+    "borderStyle": "white",
+    "backgroundColor": "#ededed",
+    "list": [
+      {
+        "text": "首页",
+        "iconPath": "./assets/icons/shouye.png",
+        "selectedIconPath": "./assets/icons/shouye-active.png",
+        "pagePath": "pages/index/index"
+      },
+      {
+        "text": "分类",
+        "iconPath": "./assets/icons/fenlei.png",
+        "selectedIconPath": "./assets/icons/fenlei-active.png",
+        "pagePath": "pages/index/index"
+      },
+      {
+        "text": "发现",
+        "iconPath": "./assets/icons/faxian.png",
+        "selectedIconPath": "./assets/icons/faxian-active.png",
+        "pagePath": "pages/index/index"
+      },
+      {
+        "text": "购物车",
+        "iconPath": "./assets/icons/gouwuche.png",
+        "selectedIconPath": "./assets/icons/gouwuche-active.png",
+        "pagePath": "pages/index/index"
+      },
+      {
+        "text": "我的",
+        "iconPath": "./assets/icons/sousuo.png",
+        "selectedIconPath": "./assets/icons/sousuo-active.png",
+        "pagePath": "pages/index/index"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

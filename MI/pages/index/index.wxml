@@ -1,0 +1,44 @@
+<!-- index.wxml -->
+<import src="../../template/navBar/navBar.wxml"></import>
+<!-- 主页容器 -->
+<view class="container">
+  <!-- 首页 顶部搜索栏 -->
+  <view class="section searchBar">
+    <view class="section searchBar-logo">
+      <view class="miLogo">
+        <image class="miLogoImg" src="../../assets/icons/logo.png" />
+      </view>
+      <view class="miSpan">
+        <span>小米</span>
+      </view>
+    </view>
+    <view class="section searchBar-box">
+      <image class="search-icon" src="../../assets/icons/search.png" mode="aspectFill" />
+      <input type="text" disabled="{{true}}" placeholder="搜索商品" placeholder-class="search-plac" bindtap="toSearch" />
+    </view>
+  </view>
+  <!-- 首页 swiper 轮播图 -->
+  <swiper class="swiper-slide" indicator-dots="{{true}}" autoplay="{{true}}" indicator-color="#fff" indicator-active-color="#fc6720" circular="true">
+    <block wx:for="{{swiperImg}}">
+      <swiper-item class="" item-id="">
+        <image class="swiper-img" src="{{item}}" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- 商品导航 -->
+  <view class="bottom-shadow">
+    <template is="navBar1" data="{{nav_data1}}"></template>
+    <template is="navBar2" data="{{nav_data2}}"></template>
+  </view>
+  <view class="recommend">
+    <view class="recommend-top">
+      <text class=".recommend-top-title">人气推荐</text>
+    </view>
+    <view class="recommend-img">
+      <image class="" src=""/>
+    </view>
+    <view class="recommend-bottom">
+      
+    </view>
+  </view>
+</view>

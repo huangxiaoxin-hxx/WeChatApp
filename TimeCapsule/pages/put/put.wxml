@@ -1,0 +1,22 @@
+<!-- pages/put/put.wxml -->
+<view id="put-box">
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <!-- 时间胶囊指定接受用户， 不指定就大家都可以打开 -->
+    <input class="username" name="username" maxlength="11" placeholder="指定用户" />
+    <!-- 记录要告诉某人的话 -->
+    <textarea class="text" placeholder="你想要说的话" name="textarea" />
+    <!-- 选择什么时候被打开 -->
+    <view class="section">
+      <view class="section__title">日期选择器</view>
+      <!-- 时间选择组件 -->
+      <picker name="date" mode="date" value="{{date}}" start="{{date}}" bindchange="bindDateChange">
+        <view class="picker">当前选择: {{date}}</view>
+      </picker>
+    </view>
+    <view class="btn-area">
+      <button formType="submit">提交</button>
+      <!-- 将所有选项初始化 -->
+      <button formType="reset">重置</button>
+    </view>
+  </form>
+</view>

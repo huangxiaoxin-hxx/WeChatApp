@@ -1,0 +1,42 @@
+/* pages/put/put.wxss */
+#put-box {
+  height: 100%;
+  width: 100%;
+  padding: 30rpx;
+  box-sizing: border-box;
+}
+.username {
+  border: 1px solid #aaa;
+  border-radius: 10rpx;
+  height: 60rpx;
+  line-height: 30rpx;
+  margin-bottom: 30rpx;
+  padding-left: 10rpx;
+  block-size: border-box;
+}
+.text {
+  width: 98%;
+  border: 1px solid #aaa;
+  border-radius: 10rpx;
+  margin-bottom: 30rpx;
+  padding-left: 10rpx;
+  block-size: border-box;
+}
+.section {
+  width: 98%;
+  border: 1px solid #aaa;
+  border-radius: 10rpx;
+  margin-bottom: 30rpx;
+  padding-left: 10rpx;
+  block-size: border-box;
+}
+.btn-area {
+  width: 98%;
+  display: flex;
+}
+.section__title {
+  color: #26b8f2;
+}
+.btn-area button {
+  flex: 1;
+}

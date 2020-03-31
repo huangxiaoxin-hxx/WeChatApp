@@ -1,0 +1,22 @@
+<view class="login-box">
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="login">
+      <!-- 提示信息 -->
+      <view class="mask {{isShow}}">
+        <view class='toast'>
+          <view class='toast-text'>{{toast}}</view>
+          <button class="Mask_btn" type="primary" bindtap="closeMask">确定</button>
+        </view>
+      </view>
+      <!-- 用户名 -->
+      <input class="username" focus name="username" maxlength="11" placeholder="请输入用户名" />
+      <!-- 用户密码 -->
+      <input class="password" focus name="password" type="password" placeholder="请输入密码" />
+      <view class="btn-area">
+        <button formType="submit">提交</button>
+        <!-- 将所有选项初始化 -->
+        <button formType="reset">重置</button>
+      </view>
+    </view>
+  </form>
+</view>

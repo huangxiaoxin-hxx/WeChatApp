@@ -1,0 +1,36 @@
+<!-- index.wxml -->
+<view class="map-box">
+  <!-- 地图组件 -->
+  <map id="myMap" latitude='{{latitude}}' longitude="{{longitude}}" markers="{{clickMark}}" markers="{{markers}}" bindtap="clickMap" show-location>
+    <!-- 标题 -->
+    <cover-view class='top-tips'>
+      <cover-view class='top-text'>时间舱小程序</cover-view>
+    </cover-view>
+    <!-- 提示信息 -->
+    <cover-view class="mask {{isShow}}">
+      <cover-view class='toast'>
+        <cover-view class='toast-text'>{{toast}}</cover-view>
+        <button class="Mask_btn" type="primary" bindtap="closeMask"> 确定 </button>
+      </cover-view>
+    </cover-view>
+    <!-- 触发胶囊提示 -->
+    <cover-view class="mask {{isOpen}}">
+      <cover-view class='toast'>
+        <cover-view class='toast-text'>{{toast}}</cover-view>
+        <cover-view class="Mask_Button">
+          <button class="Mask_btn1" type="primary" bindtap="toCapsule"> 确定 </button>
+          <button class="Mask_btn2" type="primary" bindtap="closeCapsule"> 关闭 </button>
+        </cover-view>
+      </cover-view>
+    </cover-view>
+    <!-- 控件 -->
+    <cover-image class='map-icon map-icon_user' src='/assets/icon/icon-user.png' bindtap='toUser' />
+    <cover-image class='map-icon map-icon_reset' src='/assets/icon/reset.png' bindtap='toReset' />
+  </map>
+  <!-- <button type="primary" bindtap="getCenterLocation">获取位置</button>
+  <button type="primary" bindtap="moveToLocation">移动位置</button> -->
+  <!-- <button type="primary" bindtap="translateMarker">移动标注</button>
+  <button type="primary" bindtap="includePoints">缩放视野展示所有经纬度</button> -->
+  <button class="put_btn" type="primary" bindtap="putIn"> 在此处放入时间胶囊 </button>
+  
+</view>

@@ -48,6 +48,7 @@
   <!-- 头部导航栏结束 -->
   <swiper class="" current="{{currentTab}}" style="height:{{scrollHeight}}px" bindchange="changeBar">
     <swiper-item class="" item-id="0"></swiper-item>
+    <!-- 直播结束 -->
     <swiper-item class="recommend" item-id="1">
       <scroll-view class="recommend-scroll" scroll-y="true" style="height:{{scrollHeight}}px">
         <view class="recommend-scroll-content" wx:for="{{recommend}}">
@@ -75,7 +76,9 @@
         </view>
       </scroll-view>
     </swiper-item>
-    <swiper-item class="" item-id="2"></swiper-item>
+    <!-- 推荐结束 -->
+    <swiper-item class="hotspot" item-id="2"></swiper-item>
+    <!-- 热门结束 -->
     <swiper-item class="animation" item-id="3">
       <scroll-view class="animation-scroll" scroll-y="true" style="height:{{scrollHeight}}px">
         <swiper class="animation-swiper" indicator-dots="true" indicator-color="#fff" indicator-active-color="#f25c81" autoplay="true">
@@ -96,22 +99,64 @@
         <view class="my-animation">
           <view class="my-animation-top">
             <view class="my-animation-top-left">
-            <span>我的追番</span></view>
+              <span>我的追番</span>
+            </view>
             <view class="my-animation-top-right">
-            <span>查看全部</span>
-            <image class="" src="../../images/jiantou.png"/>  
+              <span>查看全部</span>
+              <image class="" src="../../images/jiantou.png" />
             </view>
           </view>
-          <view class="my-animation-bottom">
-            <scroll-view class="my-animation-bottom-scroll" scroll-x="true">
-              <view class="my-animation-bottom-view" wx:for="{{my_animation}}" wx:for-item="myItem">
-                <image class="" src="{{myItem.imgURL}}" />
+          <scroll-view class="my-animation-bottom" scroll-x="true" scroll-with-animation="true">
+            <view class="my-animation-bottom-block" wx:for="{{my_animation}}" wx:for-item="myAni">
+              <view class="top-image">
+                <image class="image" src="{{myAni.imgURL}}" />
               </view>
-            </scroll-view>
+              <view class="bottom-title">
+                <span class="name">{{myAni.name}}</span>
+              </view>
+              <view class="bottom-number">
+                <span class="number">看到第{{myAni.number}}话</span>
+              </view>
+            </view>
+          </scroll-view>
+        </view>
+        <!-- 我的追番结束 -->
+        <view class="animation-recommend">
+          <view class="my-animation-top">
+            <view class="my-animation-top-left">
+              <span>番剧推荐</span>
+            </view>
+            <view class="my-animation-top-right">
+              <span>查看更多</span>
+              <image class="" src="../../images/jiantou.png" />
+            </view>
+            <view class="animation-recommend-content">
+              <view class="animation-recommend-content-item" wx:for="{{animation_recommend}}" wx:for-item="recAni">
+                <view class="top-image">
+                  <image class="" src="{{recAni.imgURL}}" />
+                </view>
+                <view class="bottom-title">
+                  <span class="name">{{recAni.name}}</span>
+                </view>
+                <view class="bottom-number">
+                  <span class="number">更新至第{{recAni.number}}话</span>
+                </view>
+              </view>
+              <view class="transfer">
+                <view class="transfer-image">
+                  <image class="" src="../../images/transfer.png" />
+                </view>
+                <view class="transfer-text">
+                  <span>换一换</span>
+                </view>
+              </view>
+            </view>
           </view>
         </view>
       </scroll-view>
     </swiper-item>
+    <!-- 追番结束 -->
     <swiper-item class="" item-id="4"></swiper-item>
+    <!-- 影视结束 -->
   </swiper>
 </view>

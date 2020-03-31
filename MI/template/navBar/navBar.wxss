@@ -1,0 +1,36 @@
+.navBar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 160rpx;
+  background: #fff;
+}
+.nav-list{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-item{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  margin: 0 36rpx;
+}
+.nav-item .item-img{
+  display: inline-block;
+  width: 80rpx;
+  height: 80rpx;
+}
+.nav-item .item-text{
+  font-size: 20rpx;
+  color:#999;
+  margin-top: -10rpx;
+}
